@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Recipies</title>
+    <link rel="stylesheet" href="css/addRecipies.css" />
+    <link rel="stylesheet" href="css/NavAndFooterBar.css" />
+    <link rel="stylesheet" href="css/heroImg.css" />
+  </head>
+  <body>
+    <!-- Navigation bar STARTING -->
+    <nav>
+      <div class="navContainer">
+        <img src="img/nav/Yummy.svg" alt="logo" />
+        <div>
+          <a class="active" href="#header">Home</a>
+          <a href="#Recipe">Recipe</a>
+          <div class="checkbtn"></div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation bar ENDING -->
+    <section id="header" class="heroImg">
+      <div class="heroImgContainer">
+        <h1>New recipe</h1>
+      </div>
+    </section>
+
+    <div class="addRecipesContainer">
+      <h1 class="backToHome"><a href="index.html"> < Back to home</a></h1>
+
+      <form id="AddRecipesForm" class="RecipesForm">
+        <h2>Add your new recipe</h2>
+
+        <div>
+          <label for="RecipeName">Name of your recipe</label>
+          <input type="text" id="RecipeName" name="RecipeName" />
+        </div>
+
+        <div>
+          <label for="RecipeImg">Recipe image</label>
+          <input type="text" id="RecipeImg" name="RecipeImg" />
+        </div>
+
+        <div class="mt-update">
+          <button>Upload</button>
+          <input type="file" value="Update" id="mtUpdate" />
+        </div>
+
+        <div>
+          <label for="RecipeName">Food type</label>
+
+          <div class="Radio_button">
+            <input type="radio" id="veg" name="Food_type" value="Vegetarian" />
+            <label for="veg">Vegetarian</label>
+          </div>
+
+          <div class="Radio_button">
+            <input
+              type="radio"
+              id="nv"
+              name="Food_type"
+              value="Non-Vegetarian"
+            />
+              <label for="nv">Non-Vegetarian</label>
+          </div>
+        </div>
+
+        <div>
+          <label for="Ingredients">Ingredients required</label>
+          <textarea
+            name="Ingredients"
+            id="Ingredients"
+            class="ingrediants"
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="StepstoPrepare">Steps to prepare</label>
+          <textarea
+            name="StepstoPrepare"
+            id="StepstoPrepare"
+            class="stepstoprepare"
+          >
+          </textarea>
+        </div>
+
+        <div class="mt-Add-Recipes">
+          <input type="submit" value="ADD RECIPE" />
+        </div>
+      </form>
+    </div>
+
+    <!-- Footer bar STARTING-->
+    <br /><br /><br />
+    <footer>
+      <div class="footerMenu">
+        <div><p>Yammy</p></div>
+        <div>
+          <a href="#header">Home </a>
+          <a href="#Recipe">Recipe</a>
+        </div>
+        <div>
+          <img src="img/footer/Group 14.svg" alt="Twitter" />
+          <img src="img/footer/Group 12.svg" alt="Facebook" />
+          <img src="img/footer/Group 16.svg" alt="Instragram" />
+        </div>
+      </div>
+      <div class="footerCopyRights">
+        <p>©2022 by yummy.</p>
+      </div>
+    </footer>
+    <!-- Footer bar ENDING-->
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+/* Hero Image STARTING*/
+
+.heroImg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("../img/home/leo-roza-P_z_xlMGuEk-unsplash@2x.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.heroImgContainer {
+  width: 90%;
+  margin: auto;
+  color: #f2f2f2;
+}
+
+.heroImgContainer h1 {
+  font-size: 45px;
+  font-weight: 400;
+  text-align: center;
+}
+/* Hero Image  MEDIA QURIE*/
+@media (max-width: 620px) {
+  .heroImgContainer h1 {
+    font-size: 40px;
+  }
+}
+
+/* Hero Image ENDING*/

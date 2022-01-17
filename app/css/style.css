@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Felipa&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("http://fonts.cdnfonts.com/css/apple-chancery");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Poppins", sans-serif;
+}
+
+/* DECLARING height to Hero Image STARTING*/
+.heroImg {
+  height: 600px;
+}
+/* DECLARING height to Hero Image ENDING*/
+
+/* DECLARING Bottom Margin to Hero Image STARTING*/
+.heroImgContainer h1 {
+  margin-bottom: 18px;
+}
+/* DECLARING Bottom Margin to Hero Image ENDING*/
+
+/* SEARCH BOX inside Hero Image STARTING*/
+.searchBox {
+  max-width: 580px;
+  height: 50px;
+  margin: auto;
+  border-radius: 30px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchBox,
+.searchBox input {
+  background-color: #f2f2f2;
+}
+
+.searchBox input {
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+  border: none;
+}
+
+.searchBox img {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+/* SEARCH BOX inside Hero ENDING*/
+
+/* Recipe STARTING*/
+.Recipe {
+  width: 70%;
+  margin: auto;
+}
+
+.OurRecipes,
+.PopularRecipes {
+  text-align: center;
+}
+.OurRecipes {
+  font-size: 20px;
+  font-weight: 400;
+  color: #00b158;
+  margin-top: 53px;
+}
+
+.PopularRecipes {
+  font-size: 36px;
+  font-weight: 600;
+  color: #17285a;
+}
+
+.AddRecipesBtn {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+}
+
+@media (max-width: 620px) {
+  .AddRecipesBtn {
+    justify-content: center;
+    transition: 0.5s;
+  }
+}
+
+.AddRecipes {
+  background-color: #4caf50;
+  color: white;
+  font-weight: 700;
+  border-radius: 23px;
+  padding: 10px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.RecipeContainer {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.RecipeBox {
+  width: 343px;
+  height: 335px;
+  background: #ffffff;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #cbcbcb;
+  border-radius: 15px;
+  margin: 0 18px;
+  margin-bottom: 40px;
+}
+
+.RecipeBoxContent {
+  padding: 0px 20px;
+}
+
+.RecipeBoxContentName {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.Description p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+/* Recipe ENDING*/

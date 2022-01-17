@@ -1,0 +1,127 @@
+/* Navigation Bar STARTING*/
+
+nav {
+  background-color: #ffffff;
+  width: 100%;
+  height: 90px;
+  box-shadow: 0px 2px 2px #00b158;
+}
+
+.navContainer {
+  max-width: 60%;
+  margin: auto;
+  padding: 13px 0;
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navContainer a {
+  font-size: 18px;
+  margin-left: 25px;
+  text-decoration: none;
+  color: #363636;
+}
+
+nav a:hover {
+  border-bottom: 3px solid #00b158;
+  color: #00b158;
+  transition: 00.2s;
+}
+
+nav a.active {
+  background: #00b158;
+  color: #ffffff;
+  transition: 0.5s;
+  padding: 4px 20px;
+  border-bottom: none;
+  border-radius: 20px;
+}
+
+.checkbtn {
+  background-image: url(../img/nav/Group\ 22.png);
+  cursor: pointer;
+  color: #ffffff;
+  width: 26px;
+  height: 20px;
+  display: none;
+}
+
+/* Navigation Bar MEDIA QURIE*/
+@media (max-width: 620px) {
+  .navContainer {
+    max-width: 90%;
+    transition: 0.5s;
+  }
+  .navContainer a {
+    display: none;
+  }
+  .checkbtn {
+    display: flex;
+  }
+}
+
+/* Navigation Bar ENDING*/
+
+/* Footer Bar STARTING*/
+
+footer {
+  bottom: 0;
+  background-color: #17285a;
+  min-height: 163px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.footerMenu {
+  cursor: pointer;
+  max-width: 80%;
+  margin: auto;
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerMenu a,
+.footerMenu p,
+.footerMenu img {
+  padding: 18px 0 30px;
+}
+
+.footerMenu a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 15px;
+}
+
+.footerMenu p {
+  font-family: "Apple Chancery", sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.footerMenu img {
+  width: 35px;
+  height: 35px;
+  margin: 0 2px;
+}
+
+.footerCopyRights p {
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Footer Bar MEDIA QURIE*/
+@media (max-width: 620px) {
+  .footerMenu {
+    display: block;
+    transition: 0.5s;
+    text-align: center;
+  }
+}
+/* Footer Bar STARTING ENDING*/

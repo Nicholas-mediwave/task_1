@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Felipa&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("http://fonts.cdnfonts.com/css/apple-chancery");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Poppins", sans-serif;
+}
+
+/* DECLARING height to Hero Image STARTING*/
+.heroImg {
+  height: 255px;
+}
+/* DECLARING height to Hero Image ENDING*/
+
+/* Add Recipe STARTING */
+
+.addRecipesContainer {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 55px;
+}
+
+.backToHome {
+  color: #363636;
+  font-weight: 650;
+  font-size: 16px;
+}
+
+.RecipesForm label {
+  font-size: 16px;
+  display: block;
+  font-weight: 600;
+}
+.RecipesForm input {
+  border-radius: 20px;
+  max-width: 500px;
+  width: 100%;
+  height: 35px;
+  padding: 0px 10px;
+  font-size: 14px;
+  margin-top: 9px;
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+}
+
+.addRecipesContainer h2 {
+  font-size: 28px;
+}
+
+.mt-update {
+  text-align: end;
+  max-width: 520px;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.mt-update button {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  width: auto;
+  font-size: 16px;
+  height: auto;
+  padding: 10px 32px;
+  margin-top: 10px;
+  font-weight: 900;
+}
+
+.mt-update input {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  top: 0;
+}
+
+.padding Ingredient {
+  border-radius: 20px;
+  width: 500px;
+}
+
+.RecipesForm textarea {
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 20px;
+  opacity: 1;
+  max-width: 500px;
+  margin-top: 9px;
+  width: 100%;
+  padding: 10px 10px;
+}
+.ingrediants {
+  height: 110px;
+}
+
+.stepstoprepare {
+  height: 272px;
+}
+.Radio_button {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.Radio_button input {
+  width: auto;
+  height: auto;
+  margin-top: 0;
+}
+
+.Radio_button label {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.mt-Add-Recipes {
+  text-align: start;
+}
+
+.mt-Add-Recipes input {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  width: auto;
+  font-size: 16px;
+  height: auto;
+  padding: 10px 32px;
+  margin-top: 10px;
+  font-weight: 900;
+}
+
+/* ADD Recipe ENDING */
