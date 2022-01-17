@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Felipa&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("http://fonts.cdnfonts.com/css/apple-chancery");
+@import url("NavAndFooterBar.css");
+@import url("heroImg.css");
 
 * {
   margin: 0;
@@ -63,7 +65,7 @@ body {
   display: inline-block;
 }
 
-.mt-update button {
+.mt-update label {
   background-color: #4caf50;
   color: white;
   border-radius: 50px;
@@ -73,14 +75,7 @@ body {
   height: auto;
   padding: 10px 32px;
   margin-top: 10px;
-  font-weight: 900;
-}
-
-.mt-update input {
-  position: absolute;
-  opacity: 0;
-  left: 0;
-  top: 0;
+  font-weight: 300;
 }
 
 .padding Ingredient {

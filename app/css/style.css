@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Felipa&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("http://fonts.cdnfonts.com/css/apple-chancery");
+@import url("NavAndFooterBar.css");
+@import url("heroImg.css");
 
 * {
   margin: 0;
@@ -79,7 +81,7 @@ body {
 
 .AddRecipesBtn {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-top: 10px;
 }
 
@@ -102,11 +104,23 @@ body {
 }
 
 .RecipeContainer {
-  display: flex;
+  display: grid;
   margin: auto;
-  flex-wrap: wrap;
   justify-content: center;
   margin-top: 40px;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+}
+@media (max-width: 1200px) {
+  .RecipeContainer {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 780px) {
+  .RecipeContainer {
+    grid-template-columns: auto;
+  }
 }
 
 .RecipeBox {
@@ -116,8 +130,6 @@ body {
   box-shadow: 0px 3px 6px #00000029;
   border: 1px solid #cbcbcb;
   border-radius: 15px;
-  margin: 0 18px;
-  margin-bottom: 40px;
 }
 
 .RecipeBoxContent {

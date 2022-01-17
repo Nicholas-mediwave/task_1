@@ -45,8 +45,15 @@
         </div>
 
         <div class="mt-update">
-          <button>Upload</button>
-          <input type="file" value="Update" id="mtUpdate" />
+          <label id="uploadBtn" for="mtUpdate">Upload</label>
+          <input
+            type="file"
+            value="Update"
+            id="mtUpdate"
+            accept="image/png, image/jpg"
+            hidden="hidden"
+            onclick="img_pathUrl(this);"
+          />
         </div>
 
         <div>
@@ -113,6 +120,12 @@
       </div>
     </footer>
     <!-- Footer bar ENDING-->
+    <script>
+      function img_pathUrl(input) {
+        var fileinput = document.getElementById("mtUpdate");
+        document.getElementById("RecipeImg").value = fileinput.value;
+      }
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>
