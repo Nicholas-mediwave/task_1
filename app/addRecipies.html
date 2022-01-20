@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add Recipies</title>
     <link rel="stylesheet" href="css/addRecipies.css" />
-    <link rel="stylesheet" href="css/NavAndFooterBar.css" />
-    <link rel="stylesheet" href="css/heroImg.css" />
   </head>
   <body>
     <!-- Navigation bar STARTING -->
@@ -23,7 +21,7 @@
     </nav>
     <!-- Navigation bar ENDING -->
     <section id="header" class="heroImg">
-      <div class="heroImgContainer">
+      <div class="heroImgContainer" id="heroImgContainer">
         <h1>New recipe</h1>
       </div>
     </section>
@@ -40,20 +38,19 @@
         </div>
 
         <div>
-          <label for="RecipeImg">Recipe image</label>
-          <input type="text" id="RecipeImg" name="RecipeImg" />
+          <label for="mtUpdate">Recipe image</label>
+          <input type="text" id="RecipeImg" name="RecipeName" />
         </div>
 
         <div class="mt-update">
-          <label id="uploadBtn" for="mtUpdate">Upload</label>
           <input
             type="file"
             value="Update"
             id="mtUpdate"
             accept="image/png, image/jpg"
             hidden="hidden"
-            onclick="img_pathUrl(this);"
           />
+          <label id="uploadBtn" for="mtUpdate">UPLOAD</label>
         </div>
 
         <div>
@@ -95,7 +92,9 @@
         </div>
 
         <div class="mt-Add-Recipes">
-          <input type="submit" value="ADD RECIPE" />
+          <a href="viewRecipes.html">
+            <input type="submit" value="ADD RECIPE"
+          /></a>
         </div>
       </form>
     </div>
@@ -120,12 +119,6 @@
       </div>
     </footer>
     <!-- Footer bar ENDING-->
-    <script>
-      function img_pathUrl(input) {
-        var fileinput = document.getElementById("mtUpdate");
-        document.getElementById("RecipeImg").value = fileinput.value;
-      }
-    </script>
     <script src="js/script.js"></script>
   </body>
 </html>

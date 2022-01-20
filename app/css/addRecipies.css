@@ -70,12 +70,14 @@ body {
   color: white;
   border-radius: 50px;
   border: none;
-  width: auto;
+  width: 86px;
+  text-align: center;
   font-size: 16px;
   height: auto;
   padding: 10px 32px;
   margin-top: 10px;
-  font-weight: 300;
+  font-weight: 700;
+  float: right;
 }
 
 .padding Ingredient {
